@@ -1,0 +1,17 @@
+<resources>
+    <string name="facebook_app_id">373643816467072</string>
+    <string name="fb_login_protocol_scheme">fb373643816467072</string>
+    <string name="kakao_app_key">fd51322374716ac68f4fb697fcfb19fd</string>
+
+    <string name="app_name">Airshop</string>
+    <string name="title_activity_welcome">Welcome to Airshop</string>
+
+    <string name="ptype_dancing_whale">\"춤추는 고래타입\"</string>
+    <string name="intro_dauth">데이터 수집 동의</string>
+    <string name="intro_dauth_details">사용자님의 성향 데이터를 분석해 수집하고자 해요.</string>
+    <string name="intro_dauth_agree">Agree</string>
+    <string name="title_activity_maine">MaineActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

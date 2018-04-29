@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.airbloc.airblocsample2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/BaseTheme">
+        <activity
+            android:name=".app.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.intro.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/WelcomeTheme" />
+
+        <meta-data
+            android:name="com.route66.solin.utils.GlideSettings"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity
+            android:name=".app.intro.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".app.settings.AboutActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".app.CardDetailsActivity"
+            android:parentActivityName=".app.MainActivity"
+            android:theme="@style/CardDetailsTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.airbloc.airblocsample2.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".app.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.airbloc.airblocsample2.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".app.settings.TermsActivity"
+            android:label=""
+            android:parentActivityName=".app.settings.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.airbloc.airblocsample2.app.settings.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".app.settings.HelpActivity"
+            android:label=""
+            android:parentActivityName=".app.settings.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.airbloc.airblocsample2.app.settings.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".app.settings.FeedbackActivity"
+            android:label=""
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.airbloc.airblocsample2.app.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MaineActivity"
+            android:label="@string/title_activity_maine"></activity>
+    </application>
+
+</manifest>

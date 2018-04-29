@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:padding="24dp">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/feedbackMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="거슬린다 바꿔줘라 으으ㅏ앙아ㅏ아아아아 언제 바꿔줄꺼야! 나 이거 쓰기 시러"
+            android:textSize="15sp"
+            android:textColor="#333333" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/feedbackCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackMessage"
+            android:layout_marginTop="12dp"
+            android:text="오류신고"
+            android:textColor="@color/textLight"
+            android:textSize="13.5sp" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/feedbackDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/feedbackCategory"
+            android:layout_toRightOf="@+id/feedbackCategory"
+            android:text="오늘"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/textLight"
+            android:textSize="13.5sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/feedbackStatusIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/arrived" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="답변이 도착했습니다."
+            android:layout_toRightOf="@+id/feedbackStatusIcon"
+            android:layout_marginLeft="18dp"
+            android:textSize="13.5sp"
+            android:textColor="@color/textLight"
+            android:id="@+id/feedbackStatus" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/feedbackAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackStatusIcon"
+            android:layout_marginTop="16dp"
+            android:text="거슬린다 바꿔줘라 으으ㅏ앙아ㅏ아아아아 언제 바꿔줄꺼야! 나 이거 쓰기 시러"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:clickable="true"
+    android:background="@drawable/ripple"
+    android:gravity="center_vertical">
+
+    <org.airbloc.airblocsample2.views.SolinTextView
+        android:id="@+id/goalSuggestName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="13.5sp"
+        android:text="하루에 한번 스스로 칭찬하기" />
+
+    <org.airbloc.airblocsample2.views.SolinTextView
+        android:id="@+id/goalSuggestingUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/textLight"
+        android:text="+ 61명" />
+
+
+</LinearLayout>

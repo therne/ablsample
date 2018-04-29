@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.airbloc.airblocsample2.app.intro.WelcomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:paddingTop="24dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#FFC700">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/badge_bg" />
+
+        <ImageView
+            android:id="@+id/badgeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dumy_badge"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/badgeImageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dumy_badge_foreground"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="bottom"
+            android:text="쇼핑하면 할수록 리워드가"
+            android:textColor="@color/textDark"
+            android:textSize="25sp" />
+
+        <org.airbloc.airblocsample2.views.SayongjaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:gravity="center_horizontal|top"
+            android:text="사용자님이 쇼핑할 때마다,\n데이터 제공에 대한 리워드가 차곡차곡 쌓여요!"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

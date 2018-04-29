@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SolinTextView">
+        <attr name="type">
+            <enum name="normal" value="0" />
+            <enum name="header" value="1" />
+            <enum name="title" value="2" />
+            <enum name="regular" value="3" />
+            <enum name="bold" value="4" />
+            <enum name="about" value="5" />
+            <enum name="none" value="6" />
+            <enum name="raleway" value="7" />
+        </attr>
+        <attr name="letterSpacing" format="dimension" />
+        <attr name="lineSpacingMult" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="GraphView">
+        <attr name="primaryColor" format="color" />
+        <attr name="secondaryColor" format="color" />
+        <attr name="percentage" format="float" />
+        <attr name="border" format="dimension" />
+    </declare-styleable>
+</resources>

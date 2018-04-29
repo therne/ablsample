@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/category_etc"
+        style="@style/goalCategory"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_etc"
+            app:backgroundTint="#FFFFFF" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="기타 목표" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_sport"
+        style="@style/goalCategory.Sub"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-105dp">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_sport"
+            app:backgroundTint="#FF5524" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="운동하기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_habit_breaker"
+        style="@style/goalCategory.Sub"
+        android:layout_marginLeft="99.86dp"
+        android:layout_marginTop="-32.45dp">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_habit_breaker"
+            app:backgroundTint="#79BAAC" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="나쁜 습관 버리기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_learn"
+        style="@style/goalCategory.Sub"
+        android:layout_marginLeft="61.72dp"
+        android:layout_marginTop="84.95dp">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_learn"
+            app:backgroundTint="#BEC958" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="익히기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_challenge"
+        style="@style/goalCategory.Sub"
+        android:layout_marginLeft="-61.72dp"
+        android:layout_marginTop="84.95dp">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_challenge"
+            app:backgroundTint="#FFD752" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="도전하기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_habit_maker"
+        style="@style/goalCategory.Sub"
+        android:layout_marginLeft="-99.86dp"
+        android:layout_marginTop="-32.45dp">
+
+        <android.support.design.widget.FloatingActionButton
+            style="@style/goalCategoryImg"
+            android:src="@drawable/btn_habit_maker"
+            app:backgroundTint="#FF8E40" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            style="@style/goalCatoryText"
+            android:text="좋은 습관 들이기" />
+    </LinearLayout>
+
+</RelativeLayout>

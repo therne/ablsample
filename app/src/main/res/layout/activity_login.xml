@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cand" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88222222"/>
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="408dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:gravity="center"
+            android:src="@drawable/logo_airshop" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+<!--        <com.route66.solin.views.TrickKakaoLoginButton
+            android:id="@+id/loginKakao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/loginbtn"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="24dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_login_kakao" />
+
+                <com.route66.solin.views.SolinTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="카카오톡으로 로그인"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </com.route66.solin.views.TrickKakaoLoginButton> -->
+
+        <LinearLayout
+            android:id="@+id/loginFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/loginbtn"
+            android:clickable="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_login_fb" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="Login with Facebook"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                app:type="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_abl"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        />
+
+
+
+</RelativeLayout>

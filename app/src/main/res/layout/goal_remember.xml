@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="296dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="false"
+            android:text="기억해두세요!"
+            android:textColor="@color/textDark"
+            android:textSize="17.5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_marginLeft="8dp"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/you_steal_my_number_one" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:id="@+id/one_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:text="오늘부터 1일!"
+                android:layout_toRightOf="@+id/one"
+                android:textSize="15dp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:layout_marginTop="2dp"
+                android:text="기왕 마음 먹었으니,\n오늘부터 시작해보는 건 어떤까요?"
+                android:textColor="@color/textLight"
+                android:layout_toRightOf="@+id/one"
+                android:layout_below="@+id/one_text"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/remember_clock" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:id="@+id/two_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:text="10시에 만나러 올께요."
+                android:layout_toRightOf="@+id/two"
+                android:textSize="15dp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:layout_marginTop="2dp"
+                android:text="앞으로는, 매일 밤 10시마다 목표를\n얼마나 수행했는지를 물어보러 올꺼에요.\n아니면, 모아보기 화면에서\n직접 달성량을 입력할 수도 있어요."
+                android:textColor="@color/textLight"
+                android:layout_toRightOf="@+id/two"
+                android:layout_below="@+id/two_text"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="확인"
+            android:textColor="@color/accentBlue"
+            android:textSize="15sp"
+            app:type="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

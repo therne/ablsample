@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:src="@drawable/temp_profile"
+            android:scaleType="centerCrop" />
+
+        <!-- Filter -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#50000000" />
+
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profileStatus"
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:text="이찬희"
+            />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/profileStatus"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="13.5sp"
+            android:text="그 왜 있잖아 말보단 행동이잖아."
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:id="@+id/friendAddButton"
+            android:background="@drawable/ripple"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_friend_add" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:text="친구 추가" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:id="@+id/profileFriendsContainer">
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:id="@+id/profileFriendsCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@color/textLight"
+                android:textSize="12sp"
+                android:text="인벤토리" />
+
+        </LinearLayout>
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textColor="@color/textLight"
+            android:textSize="12sp"
+            android:text="인벤토리" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:id="@+id/profileItemContainer">
+
+        </LinearLayout>
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textLight"
+            android:textSize="12sp"
+            android:text="지금까지 완료한 목표" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:orientation="vertical"
+            android:id="@+id/profileGoalContainer" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

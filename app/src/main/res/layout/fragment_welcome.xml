@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.airbloc.airblocsample2.app.intro.WelcomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="#F7F0EA">
+
+        <ImageView
+            android:id="@+id/letterContent"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/letter_content" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/letter_envelope" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="bottom"
+            android:text="환영합니다!"
+            android:textColor="@color/textDark"
+            android:textSize="32.5sp" />
+
+        <org.airbloc.airblocsample2.views.SayongjaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_horizontal|top"
+            android:text="사용자님을 이해해 알맞은 상품을 추천하고\n나에게 맞춰진 쇼핑 경험을 체험할 수 있는\nAirshop에 오신 걸 환영합니다."
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

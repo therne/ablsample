@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_settings"
+            android:textColor="@android:color/white"
+            android:textSize="17.5dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/settingMenuHelp"
+                style="@style/SettingMenu"
+                android:layout_marginTop="16dp">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="도움말" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settingMenuTutorial"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="튜토리얼" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settingMenuPush"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="푸시 알림" />
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    android:id="@+id/settingMenuPushState"
+                    style="@style/SettingMenuText.State"
+                    android:text="켜짐" />
+
+            </FrameLayout>
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                style="@style/SettingMenuHeader"
+                android:text="계정 정보" />
+
+            <FrameLayout
+                android:id="@+id/settingMenuLogout"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="로그아웃" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settingMenuUnregister"
+                android:visibility="gone"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="회원 탈퇴" />
+
+            </FrameLayout>
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                style="@style/SettingMenuHeader"
+                android:text="기타" />
+
+            <FrameLayout
+                android:id="@+id/settingMenuPrivacyPolicy"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="개인정보 취급방침" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settingMenuTerms"
+                android:visibility="gone"
+                style="@style/SettingMenu">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="이용약관" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/settingMenuDevInfo"
+                style="@style/SettingMenu.NoBottomDivider">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    style="@style/SettingMenuText"
+                    android:text="개발자 정보" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

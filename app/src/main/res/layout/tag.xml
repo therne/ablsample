@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:background="@drawable/tag"
+        android:gravity="center_vertical"
+        android:minWidth="70dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/tagName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.5dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/tagClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/hyde_tag_delete" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

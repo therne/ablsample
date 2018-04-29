@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.co.senab.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardImage"
+        android:src="@drawable/bg_main"
+        android:transitionName="cardContent"
+        android:scaleType="fitCenter"/>
+
+    <org.airbloc.airblocsample2.views.SayongjaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="32dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/cardContent"/>
+
+</FrameLayout>

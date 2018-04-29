@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.airbloc.airblocsample2.app.intro.PersonalityTestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#FE5250"
+            android:layout_weight="1.0">
+
+            <org.airbloc.airblocsample2.views.PersonalityTestView
+                android:id="@+id/sphereView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/letter_top_deco" />
+
+            <org.airbloc.airblocsample2.views.SayongjaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="사용자님을 알고싶어요"
+                android:textColor="@color/textDark"
+                android:textSize="22sp" />
+
+            <org.airbloc.airblocsample2.views.SayongjaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:text="더욱더 사용자님께 세세히 맞춰주고 싶어요.\n본인과 맞다고 생각되는 단어를 6개 선택해주세요."
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/tagsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalityResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <org.airbloc.airblocsample2.views.PentaGraphView
+            android:id="@+id/pentaGraphView"
+            android:layout_width="match_parent"
+            android:layout_height="320dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp">
+
+            <org.airbloc.airblocsample2.views.SayongjaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용자님은 "
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:id="@+id/personalityType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ptype_dancing_whale"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 입니다!"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/personalityDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="칭찬과 따뜻한 조언이 있다면 더욱 더 발전하는 분이신 것 같아요."
+            android:textColor="#e6ffffff"
+            android:textSize="12.5sp" />
+
+        <FrameLayout
+            android:id="@+id/next"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:background="#FE5250"
+            android:foreground="@drawable/ripple">
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="다음으로"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

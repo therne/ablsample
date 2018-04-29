@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="목표를 위해서 어떻게 하실껀지 선택해주세요."
+            android:singleLine="false"
+            android:textColor="@color/textPrimary"
+            android:textSize="13.5dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="2dp">
+
+             <LinearLayout
+                android:id="@+id/unitInputView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unitTime"
+                    android:clickable="true"
+                    android:textSize="30dp"
+                    android:padding="8dp"
+                    android:textColor="@color/textBright"
+                    android:text="몇시간" />
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textColor="@color/textBright"
+                    android:text="/" />
+
+                <org.airbloc.airblocsample2.views.SolinTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unitAmount"
+                    android:clickable="true"
+                    android:textSize="30dp"
+                    android:padding="8dp"
+                    android:textColor="@color/textBright"
+                    android:text="얼마나" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/valueInputView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amountView"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <org.airbloc.airblocsample2.views.SolinTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="하루에 "
+                        android:singleLine="false"
+                        android:textColor="@color/textLight"
+                        android:textSize="13.5dp" />
+
+                    <EditText
+                        android:layout_width="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:id="@+id/amountValue"
+                        android:textSize="26dp"
+                        android:maxLength="3"
+                        android:gravity="center"
+                        android:textColor="@color/textPrimary"
+                        android:inputType="number"
+                        android:layout_height="wrap_content" />
+
+
+                    <org.airbloc.airblocsample2.views.SolinTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amountValueText"
+                        android:gravity="center_vertical"
+                        android:text="개 수행하기"
+                        android:textColor="@color/textLight"
+                        android:textSize="13.5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeView"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <org.airbloc.airblocsample2.views.SolinTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="하루에 "
+                        android:singleLine="false"
+                        android:textColor="@color/textLight"
+                        android:textSize="13.5dp" />
+
+                    <EditText
+                        android:layout_width="38dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:id="@+id/timeValueHour"
+                        android:textSize="24sp"
+                        android:maxLength="2"
+                        android:gravity="center"
+                        android:textColor="@color/textPrimary"
+                        android:inputType="number"
+                        android:text="1"
+                        android:layout_height="wrap_content" />
+
+                    <org.airbloc.airblocsample2.views.SolinTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="시간"
+                        android:textColor="@color/textLight"
+                        android:textSize="13.5dp" />
+
+                    <EditText
+                        android:layout_width="38dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:id="@+id/timeValueMin"
+                        android:textSize="24sp"
+                        android:maxLength="2"
+                        android:gravity="center"
+                        android:textColor="@color/textPrimary"
+                        android:inputType="number"
+                        android:text="00"
+                        android:layout_height="wrap_content" />
+
+
+                    <org.airbloc.airblocsample2.views.SolinTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timeValueText"
+                        android:gravity="center_vertical"
+                        android:text="분만큼 투자하기"
+                        android:textColor="@color/textLight"
+                        android:textSize="13.5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:text="이전으로"
+            android:textColor="@color/textLight"
+            android:textSize="15sp"
+            app:type="bold" />
+
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="다음으로"
+            android:textColor="@color/accentBlue"
+            android:textSize="15sp"
+            app:type="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

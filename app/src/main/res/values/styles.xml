@@ -1,0 +1,174 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:textColorPrimary">@color/titleColor</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <!--<item name="searchViewStyle">@style/MainSearchViewStyle</item>-->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionBarTheme">@style/BaseActionBarTheme</item>
+        <item name="actionBarWidgetTheme">@style/BaseActionBarTheme</item>
+        <item name="actionBarStyle">@style/BaseActionBarStyle</item>
+    </style>
+
+    <style name="CardDetailsTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/primaryDarkTranslucent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionBarWidgetTheme">@style/BaseActionBarTheme</item>
+        <item name="actionBarStyle">@style/BaseActionBarStyle</item>
+        <item name="actionBarTheme">@style/BaseActionBarTheme</item>
+    </style>
+
+    <style name="MainTheme" parent="BaseTheme">
+        <item name="colorPrimaryDark">@color/primaryDarkTranslucent</item>
+    </style>
+
+    <style name="LoginTheme" parent="BaseTheme">
+        <item name="colorPrimaryDark">@color/primaryDarkTranslucent</item>
+        <item name="android:windowBackground">@color/textLight</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="BaseTheme">
+        <item name="colorPrimaryDark">@color/primaryDarkTranslucent</item>
+    </style>
+
+    <style name="TransparentTheme" parent="BaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="BaseActionBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+    </style>
+
+    <style name="BaseActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <!--<item name="colorControlNormal">@android:color/white</item>-->
+    </style>
+
+    <style name="MainSearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="closeIcon">@drawable/ic_clear</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="queryBackground">@android:color/white</item>
+        <item name="submitBackground">@android:color/white</item>
+    </style>
+
+    <style name="BaseTheme.Translucent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="background">@color/transparent</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/translucent</item>
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+        <!--<item name="android:backgroundDimAmount">0.5</item>-->
+    </style>
+
+    <style name="SettingMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:foreground">@drawable/ripple</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SettingMenu.NoBottomDivider">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="SettingMenuText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="type">regular</item>
+    </style>
+
+    <style name="SettingMenuText.State">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/accentBlue</item>
+    </style>
+
+    <style name="SettingMenuHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:textSize">13.5sp</item>
+    </style>
+
+    <style name="SpeakingButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#A6A6A6</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/ripple</item>
+    </style>
+
+    <style name="goalCategory">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="goalCatoryText">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="goalCategory.Sub">
+        <item name="android:layout_alignLeft">@id/category_etc</item>
+        <item name="android:layout_alignTop">@id/category_etc</item>
+    </style>
+
+    <style name="goalCategoryImg">
+        <item name="android:layout_width">@dimen/category_img</item>
+        <item name="android:layout_height">@dimen/category_img</item>
+        <item name="elevation">0dp</item>
+        <item name="fabSize">normal</item>
+    </style>
+
+    <style name="SolinEditText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">#B2B2B2</item>
+        <item name="android:background">@drawable/solin_edittext_bg</item>
+    </style>
+
+    <style name="GoalAddDialog" parent="Base.AlertDialog.AppCompat.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+</resources>

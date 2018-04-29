@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Airshop</string>
+
+    <string name="intro_dauth">데이터 수집 동의</string>
+    <string name="intro_dauth_details">사용자님의 성향 데이터를 분석해 수집하고자 해요.\n허가한다면 사용자님께 데이터 보상이 들어옵니다.</string>
+    <string name="intro_dauth_agree">수집 허가</string>
+</resources>

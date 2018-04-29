@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_network">네트워크에 연결할 수 없습니다. Wi-Fi 혹은 모바일 네트워크에 연결해주세요.</string>
+    <string name="error_internal_server">서버 에러가 발생했습니다. 잠시 후에 다시 시도해주세요.</string>
+    <string name="error_not_found">서버 에러가 발생했습니다. 구버전의 앱을 쓰고 계신건 아닌가요?</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="false"
+            android:text="언제까지 진행하실 건가요?"
+            android:textColor="@color/textPrimary"
+            android:textSize="13.5dp" />
+
+        <LinearLayout
+            android:id="@+id/valueInputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="26dp"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/yearValue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/textPrimary"
+                android:textSize="26dp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:text="년 "
+                android:textColor="@color/textLight"
+                android:textSize="13.5dp" />
+
+            <EditText
+                android:id="@+id/monthValue"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/textPrimary"
+                android:textSize="26dp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="월 "
+                android:textColor="@color/textLight"
+                android:textSize="13.5dp" />
+
+            <EditText
+                android:id="@+id/dayValue"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/textPrimary"
+                android:textSize="26dp" />
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="일"
+                android:textColor="@color/textLight"
+                android:textSize="13.5dp" />
+
+        </LinearLayout>
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="목표 달성에는 66일이 적당하다고 해요!"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/textLight"
+            android:textSize="13.5dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:text="이전으로"
+            android:textColor="@color/textLight"
+            android:textSize="15sp"
+            app:type="bold" />
+
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="다음으로"
+            android:textColor="@color/accentBlue"
+            android:textSize="15sp"
+            app:type="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.airbloc.airblocsample2.app.intro.WelcomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="#35CDAC">
+
+        <ImageView
+            android:id="@+id/reportImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/report" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="bottom"
+            android:text="@string/intro_dauth"
+            android:textColor="@color/textDark"
+            android:textSize="25sp" />
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/intro_dauth_details"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/allow"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="48dp"
+            android:background="#35CDAC"
+            android:foreground="@drawable/ripple">
+
+            <org.airbloc.airblocsample2.views.SolinTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/intro_dauth_agree"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accentMint"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하루에 하나씩 캘리그라피 하기"
+                android:textColor="#FFFFFF"
+                android:textSize="17.5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="66일 남았습니다."
+                android:textColor="#d7f1eb"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reportChart"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/accentMint"
+            android:orientation="vertical">
+
+            <org.airbloc.airblocsample2.views.DottedChartView
+                android:id="@+id/dottedChartView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/daysLayout"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal" />
+
+            <Space
+                android:id="@+id/dummySpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <org.airbloc.airblocsample2.views.SolinTextView
+            android:id="@+id/resultButton"
+            style="@style/SpeakingButton"
+            android:layout_height="48dp"
+            android:background="#6dc9b3"
+            android:text="오늘 정하신 목표를 성취하셨나요?"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@drawable/main_top_shadow" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
